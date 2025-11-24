@@ -1,0 +1,99 @@
+/* 6A7F2E forest moss*/
+/* D9A63A goldenrod*/
+/* E96A24 autumn leaf*/
+/* E8D9BA pearl beige*/
+/* 1E2A1F charcoal brown*/
+
+html {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+body {
+    background: #E8D9BA;
+    color: #1E2A1F;
+    width: 96dvw;
+    height: 98dvh;
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border: black solid 2px;
+    background: #E96A24;
+    flex-grow: 0.5;
+}
+
+main {
+    border: black solid 1px;
+    flex-grow: 5;
+}
+
+footer {
+    height: 10dvh;
+    border: black solid 1px;
+    background: #D9A63A;
+    flex-grow: 0.5;
+}
+
+.cat-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 100%;
+    padding: 5px;
+    padding-bottom: 0px;
+    border: black solid 1px;
+    margin-bottom: 0px;
+}
+
+.cat-sect {
+    list-style-type: none;
+    border: black solid 1px;
+    padding: 0px;
+    width: 90px;
+}
+
+.cat-contents {
+    border: black solid 1px;
+}
+
+.fish-ref-btn, .tackle-ref-btn, .weather-ref-btn {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #1E2A1F;
+}
+
+.fish-ref-btn {
+    background: #6A7F2E;
+}
+
+.tackle-ref-btn {
+    background: #D9A63A;
+}
+
+.weather-ref-btn {
+    background: #E96A24;
+}
+
+.fish-ref-btn:active {
+    background: #4F5F22;
+}
+
+.tackle-ref-btn:active {
+    background: #A27C2B;
+}
+
+.weather-ref-btn:active {
+    background: #AE4F1B;
+}
+
+.fish-card {
+    border: black 1px solid;
+}
