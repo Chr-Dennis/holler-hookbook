@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holler Hookbook - Conditions Checker</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/condit-check-style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&display=swap');
     </style>
@@ -20,21 +21,22 @@
     </header>
     <main>
         <div>
-            <h3>Check Conditions Based on Your Location</h3>
+            <h3 class="user-cond-heading">Check Conditions Based on Your Location</h3>
             <div>
-                <input type="text" id="userZipValue" placeholder="Enter ZIP Code">
-                <button class="zip-search-btn" id="zipSearchBtn">Search</button>
+                <input type="number" id="userZipValue" placeholder="Enter ZIP Code"><br><br>
+                <input type="button" id="searchZipBtn" value="Submit" class="submit-btn">
             </div>
         </div>
         <div>
-            <h3>Check Conditions of Popular Kentucky Lakes</h3>
+            <h3 class="lake-cond-heading">Check Conditions of Popular Kentucky Lakes</h3>
         </div>
         <div>
-            <h3>Conditions-Based Location Browsing</h3>
+            <h3 class="browse-cond-heading">Conditions-Based Location Browsing</h3>
         </div>
     </main>
     <footer>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
     </footer>
+    <script src="./js/conditCheckScript.js"></script>
 </body>
 </html>

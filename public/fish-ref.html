@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holler Hookbook - Fishing Reference</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fish-ref-style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&display=swap');
     </style>
@@ -14,18 +15,21 @@
         <h1>The Holler Hookbook</h1>
         <h2>Fishing Reference Section</h2>
         <nav>
-            <a class="nav-link" href="./index.html">Home</a>
-            <a class="nav-link" href="./condit-checker.html">Conditions Checker</a>
+            <a class="page-nav-link" href="./condit-checker.html">Conditions Checker</a>
+            <a class="page-nav-link" href="./index.html">Home</a>
         </nav> 
     </header>
     <main>
         <h2>Catalogue</h2>
         <div class="catalogue-container">
             <ul class="cat-tabs">
-                <li class="cat-sect"><button class="fish-ref-btn" id="getFishBtn">Fish<br>Species</button></li>
-                <li class="cat-sect"><button class="tackle-ref-btn" id="getTackleBtn">Fishing<br>Tackle</button></li>
-                <li class="cat-sect"><button class="weather-ref-btn" id="getCondBtn">Weather<br>Conditions</button></li>
-                <li class="cat-sect"><button id="clearBtn">Clear</button></li>
+                <li class="cat-sect"><button class="fish-ref-btn" id="getFishBtn">Fish Species</button></li>
+                <div class="btn-contents"><p>Test Text</p></div>
+                <li class="cat-sect"><button class="tackle-ref-btn" id="getTackleBtn">Fishing Tackle</button></li>
+                <div class="btn-contents"><p>Test Text</p></div>
+                <li class="cat-sect"><button class="weather-ref-btn" id="getCondBtn">Weather Conditions</button></li>
+                <div class="btn-contents"><p>Test Text</p></div>
+                <li class="cat-sect clear-button"><button id="clearBtn">Clear</button></li>
 
             </ul>
             <div class="cat-contents" id="catContents">

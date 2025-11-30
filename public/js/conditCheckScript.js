@@ -1,6 +1,5 @@
 
 const weatherURL = "https://api.weather.gov";
-const zipSearchBtn = document.getElementById("zipSearchBtn");
 const testCities = [
     {
         "id": "1",
@@ -11,7 +10,7 @@ const testCities = [
     {
         "id": "2",
         "city": "Somerset",
-        "zipCode": "",
+        "zipCode": "42501",
         "latLong": "37.091852, -84.605055"
     },
     {
@@ -22,27 +21,41 @@ const testCities = [
     },
     {
         "id": "4",
-        "city": "Mt. Vernon",
-        "zipCode": "",
-        "latLong": ""
+        "city": "Campton",
+        "zipCode": "41301",
+        "latLong": "37.734037, -83.549741"
     },
     {
         "id": "5",
         "city": "Berea",
-        "zipCode": "",
-        "latLong": ""
+        "zipCode": "40404",
+        "latLong": "37.572042, -84.289074"
     },
 ]
 
+const testZipValue = 40741;
+const searchZipBtn = document.getElementById("searchZipBtn");
+
+function getUserZip() {
+    let userZipValue = document.getElementById("userZipValue").value;
+    return userZipValue;
+}
+
+
+searchZipBtn.addEventListener('click', () => {
+    getUserZip();
+    console.log(userZipValue.type);
+    console.log(userZipValue);
+});
+
 let weatherData = [];
 
-
-async function getWeatherData() {
-    try {
-        const response = await fetch(weatherURL);
-        weatherData = await response.json();
-        console
-    } catch(error) {
-        console.error(`There was an error: ${error}`);
-    }
-}
+    // async function getWeatherData() {
+    //     try {
+    //         const response = await fetch(weatherURL);
+    //         weatherData = await response.json();
+    //         console
+    //     } catch(error) {
+    //         console.error(`There was an error: ${error}`);
+    //     }
+    // }

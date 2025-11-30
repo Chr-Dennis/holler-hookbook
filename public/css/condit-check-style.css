@@ -1,0 +1,16 @@
+
+.user-cond-heading {
+    background: #6A7F2E;
+}
+
+.lake-cond-heading {
+    background: #D9A63A;
+}
+
+.browse-cond-heading {
+    background: #E96A24;
+}
+
+.submit-btn:active {
+    background: gray;
+}

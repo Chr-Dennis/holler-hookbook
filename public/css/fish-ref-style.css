@@ -1,0 +1,132 @@
+
+.cat-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 0px;
+    border: black solid 1px;
+    margin-bottom: 0px;
+}
+
+.cat-sect {
+    list-style-type: none;
+    border: black solid 1px;
+    padding: 0px;
+    width: 90px;
+    justify-items: center;
+    align-content: center;
+}
+
+.btn-contents {
+    display: none;
+}
+
+.cat-contents {
+    border: black solid 1px;
+}
+
+.fish-ref-btn, .tackle-ref-btn, .weather-ref-btn {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #1E2A1F;
+}
+
+.fish-ref-btn {
+    background: #6A7F2E;
+}
+
+.tackle-ref-btn {
+    background: #D9A63A;
+}
+
+.weather-ref-btn {
+    background: #E96A24;
+}
+
+.fish-ref-btn:active {
+    background: #4F5F22;
+}
+
+.tackle-ref-btn:active {
+    background: #A27C2B;
+}
+
+.weather-ref-btn:active {
+    background: #AE4F1B;
+}
+
+.fish-card {
+    border: black 1px solid;
+    border-radius: 5px;
+    background: oldlace;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.cat-para {
+    background: oldlace;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 5px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    h1 {
+        font-size: 2.75em;
+        margin: 10px;
+    }
+    
+    .cat-tabs {
+        justify-content: center;
+    }
+
+    .cat-sect {
+        width: 30%;
+    }
+
+    .fish-ref-btn, .tackle-ref-btn, .weather-ref-btn {
+        flex-grow: 1;
+        align-self: stretch;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.5em;
+        margin: 0px;
+    }
+
+    .catalogue-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .cat-tabs {
+        flex-wrap: wrap;
+    }
+
+    .cat-sect {
+        width: 61.8dvw;
+    }
+
+    .btn-contents {
+        display: inline;
+        border: solid black 1px;
+    }
+
+    .cat-contents {
+        display: none;
+    }
+
+    .fish-ref-btn, .tackle-ref-btn, .weather-ref-btn {
+        border-radius: 5px;
+    }
+}

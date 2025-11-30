@@ -58,6 +58,7 @@ getTackleBtn.addEventListener('click', () => {
     console.log("Button 2 clicked");
     resetCatContents();
     const p = document.createElement('p');
+    p.className = "cat-para";
     p.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit.";
     catContents.append(p);
 })
@@ -66,6 +67,7 @@ getCondBtn.addEventListener('click', () => {
     console.log("Button 3 clicked");
     resetCatContents();
     const p = document.createElement('p');
+    p.className = "cat-para";
     p.innerText = "Cupiditate soluta hic non aut molestias ullam sequi, molestiae eveniet dolor voluptatum aspernatur veniam pariatur exercitationem maiores ipsam deleniti quisquam quae?";
     catContents.append(p);
 })
