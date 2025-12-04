@@ -37,10 +37,62 @@ app.get('/api/fish', (req, res) => {
         "prefTemp": "65°-80°F",
         "avgSize": "0.5-1lbs, 4-12in",
         "recordSizeKy": "4lb 3oz"
-    }
-
-    
+    }   
 ]);
+
+})
+
+app.get('/api/fishSeasons', (req, res) => {
+    res.json([
+    {
+        "id": 1,
+        "season": "Traditional fishing (pole & line)",
+        "regulationSeason": "Open season",
+        "dates2025": "Year-round"
+    },
+
+    {
+        "id": 2,
+        "season": "Trout Catch & Release (Designated Streams)",
+        "regulationSeason": "Streams open to fishing year-round; Oct. 1 - Mar. 31 No harvest of trout/articifical lures only",
+        "dates2025": "Oct. 1, 2025 - Mar. 31, 2026"
+    },
+    
+    {
+        "id": 3,
+        "season": "Free Fishing Days (No license required)",
+        "regulationSeason": "1st Full weekend, (consecutive Sat.-Sun.) in June",
+        "dates2025": "​​​​​​​​​​​​June 7 - 8, 2025​​"
+    },
+
+    {
+        "id": 4,
+        "season": "Bow Fishing, Spear Fishing",
+        "regulationSeason": "​​​​​Open Season",
+        "dates2025": "​​​​​​​​​​​​Year-round"
+    },
+
+    {
+        "id": 5,
+        "season": "​​​​​​​Sport Fishing Trotlines, Jugging, Setlines",
+        "regulationSeason": "​​​​​Open Season ",
+        "dates2025": "Year-round"
+    },
+
+    {
+        "id": 6,
+        "season": "​​​​​​​​Gigging & Snagging for Rough Fish",
+        "regulationSeason": "Feb. 1 - May 10",
+        "dates2025": "Feb. 1 - May 10, 2025"
+    },
+
+    {
+        "id": 7,
+        "season": "​​​​​​Tickling & Noodling for Rough Fish",
+        "regulationSeason": "​June 1 - Aug. 31 (daylight hours)",
+        "dates2025": "​​​​​​​​​​June 1 - Aug. 31, 2025"
+    }
+    ]);
 })
 
 app.listen(port, () => {
