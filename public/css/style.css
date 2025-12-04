@@ -16,12 +16,11 @@
   font-style: normal;
 }
 
-
-
 /* Heading fonts */
 h1, h2 {
     font-family: "Gloria Hallelujah", "Patrick Hand", Candara, sans-serif; 
     font-weight: 800;
+    text-align: center;
 }
 
 h3, h4, h5, h6 {
@@ -44,6 +43,25 @@ html {
     align-content: center;
 }
 
+header {
+    border: black solid 2px;
+    border-radius: 10px;
+    background: #E96A24;
+    flex-grow: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
 body {
     background: #E8D9BA;
     color: #1E2A1F;
@@ -54,23 +72,16 @@ body {
     flex-direction: column;
 }
 
-header {
-    border: black solid 2px;
-    border-radius: 10px;
-    background: #E96A24;
-    flex-grow: 0.5;
-    justify-content: center;
-    justify-items: center;
-}
-
 h2 {
     text-wrap: balance;
     text-align: center;
+    margin: 0px;
 }
 
 main {
     border: black solid 1px;
     flex-grow: 5;
+    padding: 10px;
 }
 
 button {
@@ -81,11 +92,11 @@ button {
 
 footer {
     height: 10dvh;
+    width: 100%;
     border: black solid 1px;
     border-radius: 10px;
     background: #D9A63A;
     flex-grow: 0.5;
-    /* position: fixed; */
     align-self: center;
     bottom: 0;
 }
@@ -93,78 +104,42 @@ footer {
 .nav-link {
     padding: 5px;
     margin: 5px;
+
 }
 
-.cat-tabs {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    max-width: 100%;
-    padding: 5px;
-    padding-bottom: 0px;
-    border: black solid 1px;
-    margin-bottom: 0px;
-}
-
-.cat-sect {
-    list-style-type: none;
-    border: black solid 1px;
-    padding: 0px;
-    width: 90px;
-    justify-items: center;
-    align-content: center;
-}
-
-.cat-contents {
-    border: black solid 1px;
-}
-
-.fish-ref-btn, .tackle-ref-btn, .weather-ref-btn {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 40px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    color: #1E2A1F;
-}
-
-.fish-ref-btn {
+.cond-check-sect {
     background: #6A7F2E;
 }
 
-.tackle-ref-btn {
+.fish-ref-sect {
     background: #D9A63A;
 }
 
-.weather-ref-btn {
+.fish-seasons-sect {
     background: #E96A24;
 }
 
-.fish-ref-btn:active {
-    background: #4F5F22;
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    h1 {
+        font-size: 2.75em;
+        margin: 10px;
+    }
+    
+    .cat-tabs {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cat-sect {
+        width: 30%;
+    }
+
+    .fish-ref-btn, .tackle-ref-btn, .weather-ref-btn {
+        flex-grow: 1;
+        align-self: stretch;
+    }
 }
 
-.tackle-ref-btn:active {
-    background: #A27C2B;
-}
+/* @media screen and (min-width: 767px) {
 
-.weather-ref-btn:active {
-    background: #AE4F1B;
-}
-
-.fish-card {
-    border: black 1px solid;
-    border-radius: 5px;
-    background: oldlace;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.cat-para {
-    background: oldlace;
-    border-radius: 5px;
-    margin: 0px;
-    padding: 5px;
-}
+} */

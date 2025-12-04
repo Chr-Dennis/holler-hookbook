@@ -1,0 +1,27 @@
+{
+  "name": "holler-hookbook",
+  "version": "1.0.0",
+  "description": "The Holler Hookbook is a fishing project intended to be a resource for those who want information regarding fishing in the southwestern Appalachian region.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chr-Dennis/holler-hookbook.git"
+  },
+  "author": "Christian Dennis",
+  "type": "commonjs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chr-Dennis/holler-hookbook/issues"
+  },
+  "homepage": "https://github.com/Chr-Dennis/holler-hookbook#readme",
+  "devDependencies": {
+    "geocodio-library-node": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
