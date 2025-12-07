@@ -14,3 +14,19 @@
 .submit-btn:active {
     background: gray;
 }
+
+.lake-cond-cont {
+    border: black solid 1px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 4fr;
+}
+
+.lake-name, .lake-cond-result {
+    border: black solid 1px;
+}
+
+.lake-cond-result {
+    grid-column-start: span 3;
+    display: none;
+}

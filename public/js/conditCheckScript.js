@@ -1,4 +1,6 @@
 
+import getZipCoords from "../../src/getZipCoords.js";
+ 
 const weatherURL = "https://api.weather.gov";
 // const Geocodio = require('geocodio-library-node'); 
 // const geocoder = new Geocodio(`${process.env.GEOCODIO_API_KEY}`);
@@ -8,15 +10,10 @@ const searchZipBtn = document.getElementById("searchZipBtn");
 let userZipValue;
 
 searchZipBtn.addEventListener('click', () => {
-    getUserZip();
-    console.log(userZipValue);
-    // getCitiesByZip();
-});
-
-function getUserZip() {
     userZipValue = document.getElementById("userZipValue").value;
-    return userZipValue;
-}
+    console.log(userZipValue);
+    // getZipCoords(userZipValue);
+});
 
 // async function getCitiesByZip() {
 //     const endpoint = `https://api.geocod.io/v1.9/geocode?q=${userZipValue}&api_key=${process.env.GEOCODIO_API_KEY}`;
