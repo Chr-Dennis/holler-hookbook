@@ -96,7 +96,6 @@ app.get('/api/fishSeasons', (req, res) => {
 })
 
 app.get('/api/getZipCoords', (req, res) => {
-    
     res.send('You found the zip coordinates page!')
 })
 
