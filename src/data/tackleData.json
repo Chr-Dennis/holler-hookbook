@@ -1,0 +1,95 @@
+[
+    {
+        "category": "Line",
+        "entries": [
+            {
+            "type": "Monofilament",
+            "characteristics": [
+                {
+                    "stretchability": "Stretches more with lower degradation",
+                    "floatability": "Floats on surface longer, slower sinking",
+                    "visibilty": "Higher visibility in water",
+                    "abrasionResistance": "Moderate resistance"  
+                }
+            ],
+            "bestUses": "Top water"
+            },
+            
+            {
+            "type": "Fluorocarbon",
+            "characteristics": [
+                {
+                    "stretchability": "Stretches slightly with higher degradation",
+                    "floatability": "Quickly sinks into water",
+                    "visibility": "Very low visiblity in water",
+                    "abrasionResistance": "Moderate resistance" 
+                }
+            ],
+            "bestUses": "Finesse, deep water"
+            }
+            
+            
+        ]
+    },
+    {
+        "category": "Reels",
+        "entries": [
+            {
+                "type": "Spin reel"
+            },
+            {
+                "type": "Spin cast reel"
+            },
+            {
+                "type": "Bait cast reel"
+            },
+            {
+                "type": "Fly reel"
+            }
+        ]
+    },
+    {
+        "category": "Rods",
+        "entries": [
+            {
+                "material": [
+                    {
+                        "type": "Graphite rod"
+                    },
+                    {
+                        "type": "Carbon fiber rod"
+                    },
+                    {
+                        "type": "Fiberglass rod"
+                    },
+                    {
+                        "type": "Composite rod"
+                    }
+                ],
+                "action": [
+                    {
+                        "type": ""
+                    }
+                ],
+                "power": [
+                    {
+                        "type": ""
+                    }
+                ],
+                "length": [
+                    {
+                        "type": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Lures",
+        "entries": []
+    },
+    {
+        "category": "Hooks",
+        "entries": []
+    }
+]

@@ -10,7 +10,7 @@ let fishData = [];
 
 async function getFishData() {
     try {
-        const response = await fetch('./api/fish');
+        const response = await fetch('./api/fish-data');
         fishData = await response.json();
         console.log(fishData);
         console.log(fishData.length);

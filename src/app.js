@@ -1,48 +1,19 @@
 
 import express from 'express';
+import refRouter from './referenceRouter.js';
 import path from 'path';
+
+
 const app = express();
 const port = 4000;
 
 
 app.use(express.static(path.join("..", "public")));
+app.use(express.urlencoded({ extended: false }));
 
-app.get('/api/fish', (req, res) => {
-    res.status(200).json([
-    {
-        "id": 1,
-        "commonName": "Largemouth Bass",
-        "scientificName": "Micropterus salmoides",
-        "favFood": "Invertabrates, bait fish, amphibians, small fish",
-        "prefWaterTemp": "55°-65°F",
-        "avgSize": "1-5lbs, 12-20in",
-        "recordSizeKy": "14lb 9.5oz"
-    },
-    
-    {
-        "id": 2,
-        "commonName": "Blue Catfish",
-        "scientificName": "Ictalurus furcatus",
-        "favFood": "Amphibians, small reptiles, crayfish, bait fish, small fish",
-        "prefWaterTemp": "70°-84°F",
-        "avgSize": "30-70lbs, 25-46in",
-        "recordSizeKy": "106lb 14.4oz"
-    },
+app.use('/api/data', refRouter);
 
-    {
-        "id": 3,
-        "commonName": "Bluegill",
-        "scientificName": "Lepomis macrochirus",
-        "favFood": "Insects and larvae, small crustaceans, small fish and fry",
-        "prefTemp": "65°-80°F",
-        "avgSize": "0.5-1lbs, 4-12in",
-        "recordSizeKy": "4lb 3oz"
-    }   
-]);
-
-})
-
-app.get('/api/fishSeasons', (req, res) => {
+app.get('/api/fish-seasons', (req, res) => {
     res.json([
     {
         "id": 1,
@@ -95,7 +66,7 @@ app.get('/api/fishSeasons', (req, res) => {
     ]);
 })
 
-app.get('/api/getZipCoords', (req, res) => {
+app.get('/api/get-zip-coords', (req, res) => {
     res.send('You found the zip coordinates page!')
 })
 
