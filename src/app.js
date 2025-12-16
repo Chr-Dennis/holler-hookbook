@@ -2,7 +2,7 @@
 import express from 'express';
 import refRouter from './referenceRouter.js';
 import path from 'path';
-
+import bodyParser from "body-parser";
 
 const app = express();
 const port = 4000;
@@ -10,6 +10,9 @@ const port = 4000;
 
 app.use(express.static(path.join("..", "public")));
 app.use(express.urlencoded({ extended: false }));
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 app.use('/api/data', refRouter);
 

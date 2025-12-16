@@ -109,13 +109,14 @@ async function createRefRequest(requestBody) {
 
         await fs.writeFile(userReqFilePath, JSON.stringify(refReqs));
 
-        return newCharacter;        
+        return newUserReq;        
     } catch (error) {
         console.error(error.message);
     }
 }
 
-refRouter.post('/', async (req, res) => {
+refRouter.post('/userRefRequest', async (req, res) => {
+    console.log("REQ BODY:", req.body);
     try {
         if (!req.body) {
             return res.status(400).json({

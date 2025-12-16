@@ -16,7 +16,7 @@ form.addEventListener("submit", async (event) => {
     }
 
     try {
-        const postRequest = await fetch('http://localhost:4000/api/data', {
+        const postRequest = await fetch('http://localhost:4000/api/data/userRefRequest', {
             method: "POST",
             body: JSON.stringify(newEntry),
             headers: {
@@ -27,6 +27,7 @@ form.addEventListener("submit", async (event) => {
         console.error(error.message);
     }
     form.reset();
+    charCount.textContent = 0;
 });
 
 textArea.addEventListener("input", () => {
