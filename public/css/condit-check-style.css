@@ -1,6 +1,8 @@
 
 .lake-cond-heading {
     background: #6A7F2E;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .user-cond-heading {
@@ -8,7 +10,7 @@
 }
 
 .browse-cond-heading {
-    background: #E96A24;
+    background: #F09666;
 }
 
 .submit-btn:active {
@@ -29,4 +31,30 @@
 .lake-cond-result {
     grid-column-start: span 3;
     display: none;
+}
+
+.lake-btn {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+}
+
+.lake1, .lake4 {
+    background: #A3C153;
+}
+
+.lake2, .lake5 {
+    background: #E5C276;
+}
+
+.lake3, .lake6 {
+    background: #F4B390;
+}
+
+
+.req-form-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -2,43 +2,43 @@
     {
         "id": 1,
         "lakeName": "Laurel River Lake",
-        "lat": 36.9499962,
-        "lng": -84.2666656 
+        "lat": 36.95,
+        "lng": -84.27 
     },
      
     {
         "id": 2,
         "lakeName": "Wood Creek Lake",
-        "lat": 37.1894909,
-        "lng": -84.1811726 
+        "lat": 37.19,
+        "lng": -84.18 
     },
     
     {
         "id": 3,
         "lakeName": "Lake Cumberland",
-        "lat": 36.88666312,
-        "lng": -85.0499998 
+        "lat": 36.89,
+        "lng": -85.05 
     },
     
     {
         "id": 4,
         "lakeName": "Buckhorn Lake",
-        "lat": 37.284059,
-        "lng": -83.4065554 
+        "lat": 37.28,
+        "lng": -83.41 
     },
     
     {
         "id": 5,
         "lakeName": "Carr Creek Lake",
-        "lat": 37.2335951,
-        "lng": -82.98789329 
+        "lat": 37.23,
+        "lng": -82.99 
     },
 
     {
         "id": 6,
         "lakeName": "Cave Run Lake",
-        "lat": 38.0625237,
-        "lng": -83.4818443
+        "lat": 38.06,
+        "lng": -83.48
     }
 
 ]

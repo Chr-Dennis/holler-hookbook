@@ -16,7 +16,7 @@ form.addEventListener("submit", async (event) => {
     }
 
     try {
-        const postRequest = await fetch('http://localhost:4000/api/data/userRefRequest', {
+        const postRequest = await fetch('./api/data/userRefRequest', {
             method: "POST",
             body: JSON.stringify(newEntry),
             headers: {

@@ -10,10 +10,10 @@ let fishData = [];
 
 async function getFishData() {
     try {
-        const response = await fetch('./api/fish-data');
+        const response = await fetch('./api/data/fish-data');
         fishData = await response.json();
         console.log(fishData);
-        console.log(fishData.length);
+        console.log(fishData.data.length);
         return fishData;
     } catch (error) {
         console.error(`There was an error: ${error}`);

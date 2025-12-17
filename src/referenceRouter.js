@@ -82,9 +82,9 @@ async function getLakeCoords() {
 }
 
 refRouter.get('/lake-coords', async (req, res) => {
-    const seasons = await getLakeCoords();
+    const lakeCoords = await getLakeCoords();
     res.status(200).json({
-        data: seasons,
+        data: lakeCoords,
     });
 });
 
