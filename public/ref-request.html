@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reference Request Form</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/ref-request-style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&display=swap');
     </style>
@@ -16,33 +17,32 @@
         <nav>
             <a class="page-nav-link" href="./fish-ref.html">Fishing Reference</a>
             <a class="page-nav-link" href="./condit-checker.html">Conditions Checker</a>
-            <a class="page-nav-link" href="#">Fishing Seasons</a>
+            <!-- <a class="page-nav-link" href="#">Fishing Seasons</a> -->
             <a class="page-nav-link" href="./index.html">Home</a>
         </nav> 
     </header>
     <main>
-        <h3>Reference Request Form</h3>
+        <h3 class="form-h3">Reference Request Form</h3>
         <div>
             <form method="POST" action="/api/data" id="userReqForm">
-                <h4>Please select request type:</h4>
+                <h4 class="form-h4 type-h4">Please select request type:</h4>
                 <input type="radio" id="fishReq" name="reqType" value="Fish" required>
-                <label for="fishReq">Fish</label>
+                <label for="fishReq" class="radio-label">Fish</label>
                 <input type="radio" id="tackleReq" name="reqType" value="Tackle">
-                <label for="tackleReq">Tackle</label>
+                <label for="tackleReq" class="radio-label">Tackle</label>
                 <input type="radio" id="lakeReq" name="reqType" value="Lake">
-                <label for="lakeReq">Lake</label><br>
-                <br>
-                <label for="reqName"><strong>Name of Requested Subject:</strong></label>
+                <label for="lakeReq" class="radio-label">Lake</label><br>
+                <label for="reqName"><h4 class="form-h4 name-h4">Name of Requested Subject:</h4></label><br>
                 <input
                     name="req-name"
                     type="text"
+                    class="req-name"
                     placeholder="i.e. name of lake"
                     form="userReqForm"
                     id="reqName"
                     required
                 ><br>
-                <br>
-                <label for="reqDesc"><strong>Description of Requested Subject:</strong></label>
+                <label for="reqDesc"><h4 class="form-h4 desc-h4">Description of Requested Subject:</h4></label><br>
                 <textarea
                     name="req-desc"
                     class="req-desc"
@@ -55,11 +55,13 @@
                 ></textarea><br>
                 <p class="counter"><span id="charCount">0</span>/200</p>
                 <br>
-                <br>
                 <input type="submit" value="Submit Request Form">  
             </form>
         </div>
     </main>
+    <footer>
+        <h3>Thank you for helping to expand this resource!</h3>
+    </footer>
     <script src="./js/refRequest.js" defer></script>
 </body>
 </html>

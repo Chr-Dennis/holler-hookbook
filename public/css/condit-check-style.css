@@ -13,48 +13,124 @@
     background: #F09666;
 }
 
-.submit-btn:active {
-    background: gray;
-}
-
 .lake-cond-cont {
-    border: black solid 1px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 4fr;
-}
-
-.lake-name, .lake-cond-result {
-    border: black solid 1px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 718px;
 }
 
 .lake-cond-result {
     grid-column-start: span 3;
     display: none;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.lake-buttons {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 58px 58px 1fr;
 }
 
 .lake-btn {
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
-    height: auto;
+    height: 36.8px;
 }
 
 .lake1, .lake4 {
     background: #A3C153;
 }
 
+.lake1:active, .lake4:active {
+    background: #6A7F2E;
+}
+
 .lake2, .lake5 {
     background: #E5C276;
+}
+
+.lake2:active, .lake5:active {
+    background: #D9A63A;
 }
 
 .lake3, .lake6 {
     background: #F4B390;
 }
 
+.lake3:active, .lake6:active {
+    background: #F09666;
+}
 
-.req-form-cont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.conds-div {
+    display: block;
+}
+
+.cond-div-p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+
+.cond-div-h4 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .lake-cond-heading {
+        font-size: 1.5em;
+        border-radius: 10px;
+        height: 56px;
+    }
+
+    .lake-btn {
+        font-size: 1.25em;
+        height: 43.2px;
+    }
+
+    .lake-cond-cont {
+        height: 718px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .lake-cond-heading {
+        font-size: 2em;
+        border-radius: 15px;
+        height: 75.2px;
+    }
+
+    .lake-buttons {
+        grid-template-rows: 65px 65px 1fr;
+    }
+
+    .lake-btn {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    .lake-cond-cont {
+        height: 505px;
+    }
+
+    .conds-div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cond-div-h3 {
+        grid-column: span 4;
+    }
+
+    .feels-like {
+        grid-column: span 2;
+    }
+
+    .total-rain {
+        grid-column: span 2;
+    }
 }

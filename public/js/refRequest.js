@@ -26,6 +26,7 @@ form.addEventListener("submit", async (event) => {
     } catch (error) {
         console.error(error.message);
     }
+    alert("Request submitted, thank you for helping to build this resource!");
     form.reset();
     charCount.textContent = 0;
 });

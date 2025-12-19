@@ -38,20 +38,6 @@ refRouter.get('/fish-data', async (req, res) => {
     });
 });
 
-// characterRouter.get('/:id', async (req, res) => {
-//     const character = await getCharacterById(req.params.id);
-
-//     if (!character) {
-//         return res.status(404).json({
-//             data: "Character does not exist with that id"
-//         });
-//     }
-
-//     res.status(200).json({
-//         data: character,
-//     });
-// });
-
 // Retrieve fishing seasons data
 async function getFishSeasons() {
     try {

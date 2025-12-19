@@ -1,4 +1,8 @@
 
+header {
+    height: 250px;
+}
+
 .cat-tabs {
     display: flex;
     flex-direction: row;
@@ -6,15 +10,15 @@
     width: 100%;
     padding: 5px;
     padding-bottom: 0px;
-    border: black solid 1px;
     margin-bottom: 0px;
 }
 
 .cat-sect {
     list-style-type: none;
-    border: black solid 1px;
-    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 0px;
     width: 90px;
+    height: 70px;
     justify-items: center;
     align-content: center;
 }
@@ -23,46 +27,48 @@
     display: none;
 }
 
-.cat-contents {
-    border: black solid 1px;
-}
-
 .fish-ref-btn, .tackle-ref-btn, .weather-ref-btn {
     margin: 0px;
     padding: 0px;
     width: 100%;
-    height: 40px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 10px;
     color: #1E2A1F;
 }
 
 .fish-ref-btn {
+    background: #A3C153;
+    border-bottom-right-radius: 0px;
+}
+
+.fish-ref-btn:active {
     background: #6A7F2E;
 }
 
 .tackle-ref-btn {
+    background: #E5C276;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.tackle-ref-btn:active {
     background: #D9A63A;
 }
 
 .weather-ref-btn {
-    background: #E96A24;
-}
-
-.fish-ref-btn:active {
-    background: #4F5F22;
-}
-
-.tackle-ref-btn:active {
-    background: #A27C2B;
-}
+    background: #F4B390;
+    border-bottom-left-radius: 0px;
+}    
 
 .weather-ref-btn:active {
-    background: #AE4F1B;
+    background: #F09666;
+}
+
+.clear-button {
+    justify-content: left;
+    align-content: end;
 }
 
 .fish-card {
-    border: black 1px solid;
     border-radius: 5px;
     background: oldlace;
     padding: 5px;
@@ -75,6 +81,8 @@
     border-radius: 5px;
     margin: 0px;
     padding: 5px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
@@ -89,15 +97,16 @@
 
     .cat-sect {
         width: 30%;
+        padding: 0px;
+        height: 70px;
     }
 
-    .fish-ref-btn, .tackle-ref-btn, .weather-ref-btn {
-        flex-grow: 1;
-        align-self: stretch;
+    .ref-btn {
+        height: 100%;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     h1 {
         font-size: 3.5em;
         margin: 0px;
@@ -111,22 +120,37 @@
 
     .cat-tabs {
         flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .cat-sect {
-        width: 61.8dvw;
+        width: 61.8vw;
+        padding: 0px;
+    }
+
+    .fish-card {
+        border-radius: 10px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
     }
 
     .btn-contents {
-        display: inline;
-        border: solid black 1px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .cat-contents {
         display: none;
     }
 
-    .fish-ref-btn, .tackle-ref-btn, .weather-ref-btn {
-        border-radius: 5px;
+    .cat-para {
+        grid-column: span 3;
+        margin-top: 2.5px;
+        margin-bottom: 2.5px;
+    }
+
+    .ref-btn {
+        border-radius: 15px;
+        height: 100%;
     }
 }

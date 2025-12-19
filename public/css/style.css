@@ -37,18 +37,13 @@ nav, button, input {
     font-weight: 500;
 } 
 
-html {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
 header {
-    border: black solid 2px;
     border-radius: 10px;
     background: #E96A24;
-    flex-grow: 0.5;
+    border: solid 3px #F4B390;
     display: flex;
+    margin-top: 10px;
+    padding: 10px;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
@@ -66,8 +61,8 @@ body {
     background: #E8D9BA;
     color: #1E2A1F;
     width: 96dvw;
-    min-height: 98dvh;
-    border: black solid 1px;
+    margin: 0 auto;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -79,8 +74,7 @@ h2 {
 }
 
 main {
-    border: black solid 1px;
-    flex-grow: 5;
+    flex: 1;
     padding: 10px;
 }
 
@@ -91,55 +85,77 @@ button {
 }
 
 footer {
-    height: 10dvh;
+    height: 110px;
     width: 100%;
-    border: black solid 1px;
     border-radius: 10px;
+    border: solid 3px #E5C276;
     background: #D9A63A;
-    flex-grow: 0.5;
-    align-self: center;
+    flex-shrink: 0;
     bottom: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.index-h3 {
+    justify-items: center;
 }
 
 .nav-link {
     padding: 5px;
     margin: 5px;
+}
 
+.page-nav-link {
+    padding: 5px;
+    margin: 5px;
+    justify-items: center;
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
 }
 
 .cond-check-sect {
     background: #6A7F2E;
+    border: solid 3px #A3C153;
+    width: 61.8%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    justify-self: center;
 }
 
 .fish-ref-sect {
     background: #D9A63A;
+    border: solid 3px #E5C276;
+    width: 61.8%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    justify-self: center;
 }
 
 .fish-seasons-sect {
     background: #E96A24;
+    border: solid 3px #F4B390;
+    width: 61.8%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    justify-self: center;
 }
 
-@media screen and (min-width: 500px) and (max-width: 768px) {
-    h1 {
-        font-size: 2.75em;
-        margin: 10px;
-    }
-    
-    .cat-tabs {
-        display: flex;
-        justify-content: center;
-    }
-
-    .cat-sect {
-        width: 30%;
-    }
-
-    .fish-ref-btn, .tackle-ref-btn, .weather-ref-btn {
-        flex-grow: 1;
-        align-self: stretch;
-    }
+.req-form-cont {
+    display: flex;
+    height: 110px;
+    margin-top: 20px;
+    flex-direction: column;
+    align-content: center;
+    background: #D9A63A;
+    border-radius: 10px;
 }
 
-/* @media screen and (min-width: 767px) {
+.req-desc {
+    width: 90dvw;
+}
 
-} */

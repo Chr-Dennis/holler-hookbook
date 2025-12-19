@@ -16,7 +16,7 @@
         <h2>Fishing Reference Section</h2>
         <nav>
             <a class="page-nav-link" href="./condit-checker.html">Conditions Checker</a>
-            <!-- <a class="page-nav-link" href="#">Fishing Seasons</a> -->
+            <a class="page-nav-link" href="./ref-request.html">Request Form</a>
             <a class="page-nav-link" href="./index.html">Home</a>
         </nav> 
     </header>
@@ -24,12 +24,12 @@
         <h2>Catalogue</h2>
         <div class="catalogue-container">
             <ul class="cat-tabs">
-                <li class="cat-sect"><button class="fish-ref-btn" id="getFishBtn">Fish Species</button></li>
-                <div class="btn-contents"><p>Test Text</p></div>
-                <li class="cat-sect"><button class="tackle-ref-btn" id="getTackleBtn">Fishing Tackle</button></li>
-                <div class="btn-contents"><p>Test Text</p></div>
-                <li class="cat-sect"><button class="weather-ref-btn" id="getCondBtn">Weather Conditions</button></li>
-                <div class="btn-contents"><p>Test Text</p></div>
+                <li class="cat-sect"><button class="fish-ref-btn ref-btn" id="getFishBtn"><h3>Fish Species</h3></button></li>
+                <div class="btn-contents" id="fishDivLgScreen"></div>
+                <li class="cat-sect"><button class="tackle-ref-btn ref-btn" id="getTackleBtn"><h3>Fishing Tackle</h3></button></li>
+                <div class="btn-contents tackle-btn-lg" id="tackleDivLgScreen"></div>
+                <li class="cat-sect"><button class="weather-ref-btn ref-btn" id="getCondBtn"><h3>Weather Conditions</h3></button></li>
+                <div class="btn-contents weather-btn-lg" id="weatherDivLgScreen"></div>
                 <li class="cat-sect clear-button"><button id="clearBtn">Clear</button></li>
 
             </ul>
@@ -38,10 +38,10 @@
             </div>
         </div>
     </main>
-    <div class="req-form-cont">
+    <footer class="req-form-cont">
         <h3>Don't see what you're looking for?</h3>
         <p><a class="req-form-link" href="./ref-request.html">Click here to request it!</a></p>
-    </div>
+    </footer>
     <script src="./js/fishRefScript.js"></script>
 </body>
 </html>
