@@ -14,29 +14,29 @@ There is no short supply of company pages and personal blogs dedicated to fishin
 1. Install Node.js, using `node -v` and `npm -v` to ensure Node is above v22.20.0 and NPM is above 11.6.2.
 2. Clone down the repo from Github using GIT:
 
-```bash
-git clone https://github.com/Chr-Dennis/holler-hookbook.git
-```
+    ```bash
+    git clone https://github.com/Chr-Dennis/holler-hookbook.git
+    ```
 
 3. Change into the project directory:
 
-```bash
-cd src
-```
+    ```bash
+    cd src
+    ```
 
 4. Install dependency software:
 
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
 5. Launch the server
 
-```bash
-npm run dev
-```
+    ```bash
+    npm run dev
+    ```
 
-6. Navigate to http://localhost:4000 in your browser to view the project.
+6. Navigate to `http://localhost:4000` in your browser to view the project.
 
 ## Dependencies
 
@@ -47,15 +47,15 @@ npm run dev
 
 1. Create a node.js web server using Express.js.
 
-- Tremendous appreciation for the Code:You team as well as the BroCode and Web Dev Simplified channels and communities.
+   - Tremendous appreciation for the Code:You team as well as the BroCode and Web Dev Simplified channels and communities.
 
 2. Create an API that implements HTTP requests for GET and POST. Data can be stored in a JSON file on the back-end.
 
-- Constructed multiple routes to API, both for reading and creating data. This allows the user to review collected reference data as well as make requests for suggested additions to reference material.
+   - Constructed multiple routes to API, both for reading and creating data. This allows the user to review collected reference data as well as make requests for suggested additions to reference material.
 
 3. Analyze data that is stored in arrays, objects, sets or maps and display information about it in your app.
 
-- Multiple sets of JSON data manipulated for delivery of reference material, both from external sources and self-compiled.
+   - Multiple sets of JSON data manipulated for delivery of reference material, both from external sources and self-compiled.
 
 ## Sample Code
 
